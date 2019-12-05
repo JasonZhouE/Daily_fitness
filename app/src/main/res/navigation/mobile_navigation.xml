@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ca.bcit.daily_fitness.ui.home.HomeFragment"
+        android:label="Daily Fitness"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="ca.bcit.daily_fitness.ui.dashboard.DashboardFragment"
+        android:label="BMI"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/navigation_diet"
+        android:name="ca.bcit.daily_fitness.ui.diet.DietFragment"
+        android:label="Diet"
+        tools:layout="@layout/fragment_diet" />
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="ca.bcit.daily_fitness.ui.notifications.NotificationsFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="ca.bcit.daily_fitness.ui.profile.ProfileFragment"
+        android:label="Timer"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
